@@ -1,3 +1,13 @@
+Restrictions: 
+
+1) No global variables, other than constants
+2) All member data of your class must be private
+3) You will need to use the <iostream> library for output.  You may use the <iomanip> library for 	formatting your decimal output to two places, if you wish to use the parameterized stream manipulators, but you may not use setw() or other output formatting functions for drawing the actual triangle. You may use the <cmath> library
+4) Do not use language or library features that are C++11-only
+5) When you write source code, it should be readable and well-documented.
+6) Your triangle.h file should contain the class declaration only.  The triangle.cpp file should contain the member function definition
+
+
 Triangle.h 
 
 
@@ -22,6 +32,11 @@ int getPerimeter()
 
 int getArea()
 
+Description: Will consist of using Heron's Formula. Which will consist of the following;
+	     Area = sqrt(s(s-a)(s-b)(s-c)) 
+
+	     While to gain the value of the side from the following;
+	     Side = a+b+c/2
 
 void Draw()
 
@@ -42,3 +57,6 @@ void SetBorder()
 void SetFill()
 
 void Summary()
+
+Description: Will consist of the a simple toString-like function to display the given out of a particular triangle.
+
