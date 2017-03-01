@@ -1,9 +1,15 @@
 #include <iostream>
+#include "linetype.h"
 
 using namespace std;
 
 int main(int argc, char *argv[])
+
 {
-    cout << "Hello World!" << endl;
+    lineType linetype1(3, 4, 5);
+    lineType linetype2(2,5,8);
+    linetype1.summary();
+    linetype2.summary();
+
     return 0;
 }
